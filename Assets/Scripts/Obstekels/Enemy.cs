@@ -33,7 +33,6 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-
             transform.LookAt(targetpos);
         }
 

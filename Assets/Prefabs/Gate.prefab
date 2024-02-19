@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gateOperation: 0
-  value: 0
+  value: 100
   operationText: {fileID: 5961195695729812413}
   forceField: {fileID: 5961195695093195123}
   operationTypeMaterial:
@@ -416,7 +416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

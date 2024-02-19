@@ -5,14 +5,15 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     [SerializeField] private float speed = 15.0f;
-    //[SerializeField] GameObject effectPrefab;
+    private int value = 50;
+   private PlayerHealth  playerHealth;
     void Start()
     {
-
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        //FindObjectOfType<CoinManager>().AddOne();
+        playerHealth.TakeValue(value);
         Destroy(gameObject);
        // Instantiate(effectPrefab, transform.position, transform.rotation);
 

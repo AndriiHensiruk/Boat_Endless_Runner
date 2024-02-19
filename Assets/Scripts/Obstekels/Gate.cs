@@ -20,10 +20,16 @@ public class Gate : MonoBehaviour
     [SerializeField] private TextMeshPro operationText;
     [SerializeField] private MeshRenderer forceField;
     [SerializeField] private Material[] operationTypeMaterial;
+    private PlayerHealth  playerHealth;
 
     private void Awake()
     {
         AssignOperation();
+    }
+
+    private void Start()
+    {
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
     private void AssignOperation()
     {
@@ -47,18 +53,16 @@ public class Gate : MonoBehaviour
             forceField.material = operationTypeMaterial[1];
     }
 
-    public void ExecuteOperation()
+   public void TakeValue(int _value)
     {
-        // if (gateOperation == OperationType.addition)
-        //     GameEvents.instance.playerSize.Value += value;
-        // if (gateOperation == OperationType.difference)
-        //     GameEvents.instance.playerSize.Value -= value;
-        // if (gateOperation == OperationType.multiplication)
-        //     GameEvents.instance.playerSize.Value *= value;
-        // if (gateOperation == OperationType.division)
-        //     GameEvents.instance.playerSize.Value /= value;
-
-        GetComponent<BoxCollider>().enabled = false;
-        forceField.gameObject.SetActive(false);
+        value += _value; 
+    }
+     public void OnCollisionEnter(Collision co)
+    {
+        if(co.gameObject.tag == "Player")
+        {
+            playerHealth.TakeValue(value);
+            Destroy(gameObject);
+        }
     }
 }

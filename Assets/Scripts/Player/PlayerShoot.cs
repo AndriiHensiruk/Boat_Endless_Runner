@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+    RaycastHit hit;
     public GameObject _bullet;
     public float bulletSpeed = 2800;
     public Transform pof;
+    public int Damge = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,4 +27,6 @@ public class PlayerShoot : MonoBehaviour
         Destroy(bullet, 3f);
         
     }
+
+    
 }

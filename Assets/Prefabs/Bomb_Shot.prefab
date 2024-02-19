@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23750356168675902}
   - component: {fileID: 95791425425279978}
   - component: {fileID: 6230181221276969099}
+  - component: {fileID: -5215646787977188565}
   m_Layer: 0
   m_Name: Bomb_Shot
   m_TagString: Untagged
@@ -128,3 +129,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1277864
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5215646787977188565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196744780447740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa53cea8626899541bc4b590467dce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHalse: {fileID: 8443987562195898391, guid: 3c9138e879d0fad4c989495db4e52129, type: 3}
+  gate: {fileID: 5961195695942713743, guid: 259a82ff5c7341940891d06c38f1d21b, type: 3}
+  Damage: 50
+  Value: 40
