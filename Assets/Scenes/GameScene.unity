@@ -358,6 +358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1075546738}
   - component: {fileID: 1075546737}
+  - component: {fileID: 1075546739}
   m_Layer: 0
   m_Name: OceanGenerator
   m_TagString: Untagged
@@ -399,6 +400,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1075546739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075546736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7bf1e97a7726a4cbe801657892451c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  internalLeft: 0
+  internalRight: 0
 --- !u!4 &1290106186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448262, guid: c2b0699f327232848b46acc7f136bce5, type: 3}
@@ -477,6 +492,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2329492, guid: c2b0699f327232848b46acc7f136bce5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 44cc67909bc6e7c4db2a2a11487b93f8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -505,6 +524,22 @@ PrefabInstance:
     - target: {fileID: 3843913311271546960, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444246424076147574, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
+      propertyPath: maxSpeed
+      value: 431.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444246424076147574, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
+      propertyPath: forwardSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444246424076147574, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
+      propertyPath: movementSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444246424076147574, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
+      propertyPath: leftRightSpeed
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7338352756920979373, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
       propertyPath: m_LocalPosition.x
