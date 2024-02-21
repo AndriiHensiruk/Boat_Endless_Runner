@@ -125,6 +125,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7338352756920979373, guid: 5853ecc92de109243bdd11e670742d0d, type: 3}
   m_PrefabInstance: {fileID: 1419753864192868813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &436699680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436699682}
+  - component: {fileID: 436699681}
+  m_Layer: 0
+  m_Name: SwipeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &436699681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436699680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2528f606b8ec94aacd713851817421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &436699682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436699680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894829333
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,5 +647,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 894829336}
   - {fileID: 920134074}
+  - {fileID: 436699682}
   - {fileID: 1075546738}
   - {fileID: 1419753864192868813}

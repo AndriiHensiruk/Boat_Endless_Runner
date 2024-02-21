@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour {
       var angles = transform.rotation.eulerAngles;
        
        
-        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) || SwipeController.swipeLeft)
         {
             angles.y = Time.deltaTime * -500;
            
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
             
         
 
-        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || SwipeController.swipeRight)
         {
              angles.y = Time.deltaTime * 500;
             if(this.gameObject.transform.position.x < OceanBoundary.rightSide)
